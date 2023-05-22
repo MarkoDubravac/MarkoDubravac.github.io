@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "name": "Apples",
+    "price": 1.5
+  },
+  {
+    "id": 1,
+    "name": "Bananas",
+    "price": 1.2
+  },
+  {
+    "id": 2,
+    "name": "Oranges",
+    "price": 1.8
+  },
+  {
+    "id": 3,
+    "name": "Strawberries",
+    "price": 3.5
+  },
+  {
+    "id": 4,
+    "name": "Grapes",
+    "price": 2.5
+  },
+  {
+    "id": 5,
+    "name": "Pineapple",
+    "price": 2.0
+  },
+  {
+    "id": 6,
+    "name": "Kiwi",
+    "price": 0.3
+  },
+  {
+    "id": 7,
+    "name": "Blueberries",
+    "price": 4.0
+  },
+  {
+    "id": 8,
+    "name": "Watermelon",
+    "price": 0.8
+  },
+  {
+    "id": 9,
+    "name": "Lemons",
+    "price": 1.0
+  },
+  {
+    "id": 10,
+    "name": "Pears",
+    "price": 1.8
+  },
+  {
+    "id": 11,
+    "name": "Peaches",
+    "price": 2.5
+  },
+  {
+    "id": 12,
+    "name": "Mangoes",
+    "price": 2.5
+  },
+  {
+    "id": 13,
+    "name": "Raspberries",
+    "price": 4.0
+  },
+  {
+    "id": 14,
+    "name": "Cherries",
+    "price": 3.5
+  },
+  {
+    "id": 15,
+    "name": "Plums",
+    "price": 2.0
+  }
+]

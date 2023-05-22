@@ -1,0 +1,224 @@
+/* CSS variables */
+:root {
+  --primary-color: #18a1ad;
+  --secondary-color: #6c757d;
+  --font-size-base: 16px;
+  --font-family-base: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+.cart-button {
+  background-color: #e6e6e6;
+  color: black;
+  font-weight: bold;
+  border: 3px black solid;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.cart-button:active {
+  transform: scale(0.95);
+}
+
+.cart-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.cart-badge {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+}
+
+/* Items grid styles */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
+  margin-top: 1em;
+  padding: 0em 4em;
+  margin: 1em 5%;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6e6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.item h2 {
+  margin-top: 0.5em;
+}
+
+.item p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.add-to-cart-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.add-to-cart-btn:active {
+  transform: scale(0.95);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show-modal {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 1em;
+  border: 1px solid #ccc;
+  max-width: 600px;
+}
+
+.close {
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.cart-items li span {
+  margin-left: 0.5em;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.remove-from-cart-btn {
+  margin-left: auto;
+}
+
+.cart-total {
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+/*NAVBAR*/
+.navbar {
+  height: fit-content;
+  background: linear-gradient(to right bottom, var(--primary-color), #127780);
+  display: flex;
+  align-items: center;
+  padding: 1em 4em;
+}
+
+.nav-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.nav-button {
+  margin-left: auto;
+}
+
+/*DROPDOWN*/
+.dropdown {
+  padding: 2em 4em;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+  .slogan {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-evenly;
+  }
+}

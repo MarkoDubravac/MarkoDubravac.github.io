@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Fruit Crate</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="img/icon_small.png" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        class="slogan"
+        src="img/fruit_icon2.png"
+        width="80"
+        alt="company_logo"
+      />
+      <div class="nav-text">
+        <h1>The Fruit Crate</h1>
+        <p class="slogan">Fresh Fruits, Delivered!</p>
+      </div>
+      <div class="cart-container nav-button">
+        <button class="cart-button">
+          Cart <span class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="dropdown" style="width: 200px">
+      <span>Sort by:</span>
+      <select id="sortSelect">
+        <option value="popular">Most popular</option>
+        <option value="notPopular">Least popular</option>
+        <option value="lowest">Price - Lowest</option>
+        <option value="highest">Price - Highest</option>
+      </select>
+    </div>
+
+    <div class="items-grid"></div>
+
+    <div class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Cart</h2>
+        <ul class="cart-items"></ul>
+        <p>Total: <span class="cart-total">$0.00</span></p>
+        <button class="buy-btn">Buy</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
